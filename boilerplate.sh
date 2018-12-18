@@ -239,8 +239,11 @@ BuildRunTestScript() {
   cat <<EOF
 #!/bin/bash
 
+LIB_DIR=$HOME/Documents/arduino/libraries/jarduino
+
 g++ \\
-  $CPP_SRC_NAME\\
+  -I\$LIB_DIR -L\$LIB_DIR\\
+  \$LIB_DIR/$CPP_SRC_NAME\\
   $TEST_SRC_NAME\\
   -o $TEST_BINARY_NAME && ./$TEST_BINARY_NAME
 EOF
