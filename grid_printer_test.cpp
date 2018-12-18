@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 
 #include "grid_printer.h"
 #include "test_helpers.h"
@@ -20,13 +20,13 @@ int main ()
   using namespace std;
 
   {
-    //cout << "2-wide 3-tall grid: Should show 3 at (1,1)" << endl;
+    cout << "2-wide 3-tall grid: Should show 3 at (1,1)" << endl;
     Grid<int> grid(2, 3);
     grid.Set(1, 1, 123);
     GridPrinter::Print(grid, IntToLastDigit);
   }
   {
-    //cout << "4-wide 3-tall grid: Should show 3 at (1,1), 9 at (0,1), 8 at (2,0), 7 at (3,1)" << endl;
+    cout << "4-wide 3-tall grid: Should show 3 at (1,1), 9 at (0,1), 8 at (2,0), 7 at (3,1)" << endl;
     Grid<int> grid(4, 3);
     grid.Set(1, 1, 123);
     grid.Set(0, 1, 999);
@@ -35,7 +35,7 @@ int main ()
     GridPrinter::Print(grid, IntToLastDigit);
   }
 
-  //std::cout << "Inspect results manually to determine if tests passed." << std::endl;
+  std::cout << "Inspect results manually to determine if tests passed." << std::endl;
   return 0;
 }
 

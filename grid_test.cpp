@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 #include <assert.h>
 
 #include "grid.h"
@@ -20,6 +20,6 @@ int main ()
     TEST(Test1);
   }
 
-  // std::cout << "Tests passed!" << std::endl;
+  std::cout << "Tests passed!" << std::endl;
   return 0;
 }

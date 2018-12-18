@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 
 #include "array.h"
 #include "test_helpers.h"
@@ -35,7 +35,7 @@ int main()
   using namespace jarduino;
   TEST(Test1);
 
-  // std::cout << "Tests passed!" << std::endl;
+  std::cout << "Tests passed!" << std::endl;
   return 0;
 }
 

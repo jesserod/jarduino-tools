@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 
 #include "line_drawer.h"
 #include "grid_printer.h"
@@ -43,48 +43,48 @@ void TestExample1() {
       PointI stop(9, 10);
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
   }
   {
       PointI stop(9,9);
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
   }
   {
       PointI stop(11,10); 
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
   }
   {
       PointI stop(10,11); 
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
   }
   {
       PointI stop(10,10); 
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
   }
   for (int y = 0; y < 20; ++y) {
     for (int x = 0; x < 10; ++x) {
       if ((Abs(10-x) + Abs(10-y)) < 10) {
         continue;  // Skip short lines
       }
-      // cerr << "Draw( (" << 10 << "," << 10 <<  ") - (" << x << "," << y << ") )" << endl;
+      cerr << "Draw( (" << 10 << "," << 10 <<  ") - (" << x << "," << y << ") )" << endl;
       PointI stop(x,y);
       Array<PointI> line = LineDrawer::Draw(start, stop); 
       FillAndPrintGrid(line, start, stop);
-      //cout << endl;
-      //cout << endl;
+      cout << endl;
+      cout << endl;
     }
   }
 }
@@ -96,7 +96,7 @@ int main()
   using namespace jarduino;
   TEST(TestExample1);
 
-  // std::cout << "Manually verify that tests passed" << std::endl;
+  std::cout << "Manually verify that tests passed" << std::endl;
   return 0;
 }
 

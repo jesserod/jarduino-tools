@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 
 #include "2d.h"
 #include "point.h"
@@ -225,6 +225,6 @@ int main ()
     TEST(TestBoxContains);
   }
 
-  // std::cout << "Tests passed!" << std::endl;
+  std::cout << "Tests passed!" << std::endl;
   return 0;
 }
